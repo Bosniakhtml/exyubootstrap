@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EX-YU FILMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mystyle.css">
+  </head>
+  <body>
+    <div class = "container-header text-center">
+        <div class = "container">
+            <h1 class="display-1"> EX-YU FILMS</h1>
+            <p class="lead">Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">EX-YU FILMS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./addMovies.html">Add movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Addmovies</li>
+        </ol>
+      </nav>
+      <div class="container-form">
+        <h2>Movie Submission Form</h2>
+        <form>
+            <div class="mb-3">
+                <label for="moviename" class="form-label">Enter movie name:</label>
+                <input type="text" class="form-control" id="moviename" placeholder="Enter">
+            </div>
+            
+            <div class="mb-3">
+                <label for="directorname" class="form-label">Enter director name:</label>
+                <input type="text" class="form-control" id="directorname" placeholder="Enter">
+            </div>
+            
+            <div class="mb-3">
+                <label for="moviedate" class="form-label">Enter the movie's year of release:</label>
+                <input type="number" class="form-control" id="moviedate" placeholder="Enter">
+            </div>
+            
+            <div class="mb-3">
+                <label for="runtime" class="form-label">Enter the movie's runtime in minutes:</label>
+                <input type="number" class="form-control" id="runtime" placeholder="Enter">
+            </div>
+            
+            <div class="mb-3">
+                <label for="movielabel" class="form-label">What genre is the movie?</label>
+                <select class="form-select" id="movielabel">
+                    <option value="Horror">Horror</option>
+                    <option value="War">War</option>
+                    <option value="Drama">Drama</option>
+                    <option value="History">History</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Documentary">Documentary</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="movieDescription" class="form-label">Enter the movie description:</label>
+                <textarea class="form-control" id="movieDescription" rows="5" placeholder="Description..."></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload the movie poster:</label>
+                <input type="file" class="form-control" id="image">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit the Movie</button>
+        </form>
+        </div>
+      <footer class="bg-dark text-light custom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Contact Us</h3>
+              <p>
+                <a href="./about.html" style="text-decoration: none;">about</a>
+                <br>
+                Email: exyufilms@gmail.com
+                <br>
+                Phone: 0631-783-232
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Follow Us</h3>
+              <a href="#" class="text-light">Facebook</a><br>
+              <a href="#" class="text-light">Twitter</a><br>
+              <a href="#" class="text-light">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+  </body>
+</html>

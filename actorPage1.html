@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jasna Djuricic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mystyle.css">
+  </head>
+  <body>
+    <div class = "container-header text-center">
+        <div class = "container">
+            <h1 class="display-1"> EX-YU FILMS</h1>
+            <p class="lead">Your Gateway to the Rich Cinematic History of EX-Yugoslavia</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">EX-YU FILMS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./addMovies.html">Add movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="./detailpage1.html">Quo Vadis, Aida?</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Jasna Djuricic</li>
+        </ol>
+      </nav>
+      <div class="container actor-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="actor-title">
+                    <h1>Jasna Djuricic</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row actor-grid">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="actor-item">
+                    <img src="css/img/jasnadjuricic.jpg" alt="Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="actor-item">
+                    <div>
+                        <h2>Biography</h2>
+                    </div>
+                    <div class="text-area">
+                        <p class="txt-short">
+                            Jasna Đuričić is a talented Bosnian-Serbian actress known for her remarkable contributions to European cinema.
+                            She was born on July 23, 1971, in Sarajevo, Bosnia and Herzegovina.
+                            Jasna Đuričić gained international recognition for her versatile acting skills and has appeared in numerous critically acclaimed films.
+                            Her captivating performances have earned her awards and nominations,
+                            making her one of the prominent figures in contemporary European cinema.
+                            <a href="#" class="read-more-link">Read more</a>
+                        </p>
+                        <p class="txt-long">
+                            Jasna Đuričić, born on July 23, 1971, in Sarajevo, Bosnia and Herzegovina, is a highly regarded actress known for her exceptional talent and contributions to the world of cinema. Her career began in the early 1990s, and she quickly gained recognition for her outstanding acting abilities.
+    
+                            Đuričić's journey in the world of acting is marked by a commitment to her craft and a dedication to bringing depth and authenticity to her roles. Her performances often transcend language and cultural barriers, resonating with audiences worldwide. Her ability to convey a wide range of emotions and portray complex characters has made her a sought-after actress in both independent and mainstream cinema.
+    
+                            Throughout her career, Jasna Đuričić has collaborated with acclaimed directors and filmmakers, participating in projects that explore diverse genres and themes. Her work in films like "Esma's Secret: Grbavica" (2006), directed by Jasmila Žbanić, and "Quo Vadis, Aida?" (2020), directed by Jasmila Žbanić, has received critical acclaim and garnered international attention.
+    
+                            "Quo Vadis, Aida?" in particular marked a significant milestone in her career, earning her widespread recognition and accolades. The film, which dealt with the Srebrenica genocide, showcased Đuričić's ability to portray deeply emotional and impactful roles.
+    
+                            Jasna Đuričić's contributions to European cinema have been celebrated with awards and nominations. Her commitment to her craft and her ability to tackle challenging and thought-provoking roles have solidified her reputation as a respected figure in the world of acting.
+    
+                            Beyond her film work, Jasna Đuričić continues to be an influential presence in the industry, inspiring aspiring actors and filmmakers with her dedication and talent. Her career serves as a testament to the power of storytelling and the impact of exceptional acting on the cinematic landscape.
+    
+                            <a href="#" class="read-less-link">Show less</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const readMoreLink = document.querySelector(".read-more-link");
+            const readLessLink = document.querySelector(".read-less-link");
+            const shortText = document.querySelector(".txt-short");
+            const fullText = document.querySelector(".txt-long");
+
+            readMoreLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                shortText.style.display = "none";
+                fullText.style.display = "block";
+            });
+
+            readLessLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                shortText.style.display = "block";
+                fullText.style.display = "none";
+            });
+        });
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="kfor">
+                    <h2>Known for</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class= "container">
+        <div class = "row" id="themovies"> 
+            <div class="col-md-3 col-sm-6">
+                <div class="card"> 
+                    <a href="./detailpage1.html"><img src="css/img/aida.jpg"class="card-img-top img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card"> 
+                    <img src="css/img/avokado.jpg"class="card-img-top img-fluid">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card"> 
+                    <img src="css/img/grupa.jpg"class="card-img-top img-fluid">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card"> 
+                    <img src="css/img/belisvet.jpg"class="card-img-top img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="bg-dark text-light custom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Contact Us</h3>
+              <p>
+                <a href="./about.html" style="text-decoration: none;">about</a>
+                <br>
+                Email: exyufilms@gmail.com
+                <br>
+                Phone: 0631-783-232
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Follow Us</h3>
+              <a href="#" class="text-light">Facebook</a><br>
+              <a href="#" class="text-light">Twitter</a><br>
+              <a href="#" class="text-light">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
